@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: /Users/chenyunqing/Documents/QTM350/qtm350-quiz02/doc
+  output-dir: doc
   
 
 website:
