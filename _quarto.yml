@@ -5,6 +5,7 @@ project:
 
 website:
   title: "quiz2"
+  repo-url: https://github.com/YunqingIvyChen/qtm350-quiz02.git
   navbar:
     left:
       - href: index.qmd
