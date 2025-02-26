@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: /Users/chenyunqing/Documents/QTM350/qtm350-quiz02/doc
+  
+
+website:
+  title: "quiz2"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: life-gdp.qmd
+        text: life-gdp analysis
+      - href: life-population.qmd
+        text: life-population analysis
+      - href: country.qmd
+        text: Afghanistan analysis
+      - about.qmd
+
+format:
+  html:
+    theme:
+      - solar
+    css: styles.css
+    toc: true
+
+
+
