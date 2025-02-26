@@ -7,7 +7,11 @@ The Gapminder dataset provides country-level life expectancy, population, and GD
 You can explore the Gapminder here: [Gapminder Data Repository](https://cran.r-project.org/web/packages/gapminder/index.html).
 
 [Life Expectancy and GDP per Capita](life-gdp.qmd)
+
+
 [Life Expectancy and Population](life-population.qmd)
+
+
 [Afghanistan Analysis](country.qmd)
 
 
