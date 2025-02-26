@@ -20,6 +20,7 @@ website:
 format:
   html:
     theme: solar
+    css: style.css
     toc: true
 
 

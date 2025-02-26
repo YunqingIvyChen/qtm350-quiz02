@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Gapminder Analysis",
-    "section": "",
-    "text": "The Gapminder dataset provides country-level life expectancy, population, and GDP per capita from various regions and years.\nYou can explore the Gapminder here: Gapminder Data Repository.\nLife Expectancy and GDP per Capita Life Expectancy and Population Afghanistan Analysis"
-  },
-  {
     "objectID": "create-dataset.html",
     "href": "create-dataset.html",
     "title": "Create the Gapminder dataset",
@@ -19,6 +12,20 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "life-gdp.html",
+    "href": "life-gdp.html",
+    "title": "life-gdp analysis",
+    "section": "",
+    "text": "This analysis explores the relationship between life expectancy and GDP per capita using the Gapminder dataset. The scatter plot below visualizes this relationship.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv('/Users/chenyunqing/Documents/QTM350/qtm350-quiz02/gapminder.csv')\n\nplt.figure(figsize=(10, 6))\nplt.scatter(df['gdp_per_capita'], df['life_expectancy'], alpha=0.7, edgecolor='k')\nplt.xlabel('GDP per Capita')\nplt.ylabel('Life Expectancy')\nplt.title('Life Expectancy vs. GDP per Capita')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nThere is a general trend that countries with higher GDP per capita tends to have larger life expectancy."
+  },
+  {
+    "objectID": "life-gdp.html#introduction",
+    "href": "life-gdp.html#introduction",
+    "title": "life-gdp analysis",
+    "section": "",
+    "text": "This analysis explores the relationship between life expectancy and GDP per capita using the Gapminder dataset. The scatter plot below visualizes this relationship.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv('/Users/chenyunqing/Documents/QTM350/qtm350-quiz02/gapminder.csv')\n\nplt.figure(figsize=(10, 6))\nplt.scatter(df['gdp_per_capita'], df['life_expectancy'], alpha=0.7, edgecolor='k')\nplt.xlabel('GDP per Capita')\nplt.ylabel('Life Expectancy')\nplt.title('Life Expectancy vs. GDP per Capita')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nThere is a general trend that countries with higher GDP per capita tends to have larger life expectancy."
   },
   {
     "objectID": "country.html",
@@ -35,18 +42,11 @@
     "text": "This page analyses the changes in life expectancy, GDP per capita, and population in afghanistan\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv('/Users/chenyunqing/Documents/QTM350/qtm350-quiz02/gapminder.csv')\n\nafghanistan_data = df[df[\"country\"] == \"Afghanistan\"]\n\n\nplt.figure(figsize=(10, 12))\n\n# Subplot 1: Life Expectancy\nplt.subplot(3, 1, 1)\nplt.plot(afghanistan_data['year'], afghanistan_data['life_expectancy'], marker='o', color='blue')\nplt.title('Life Expectancy Over Time in Afghanistan')\nplt.ylabel('Life Expectancy')\n\n# Subplot 2: GDP per Capita\nplt.subplot(3, 1, 2)\nplt.plot(afghanistan_data['year'], afghanistan_data['gdp_per_capita'], marker='o', color='green')\nplt.title('GDP per Capita Over Time in Afghanistan')\nplt.ylabel('GDP per Capita')\n\n# Subplot 3: Population\nplt.subplot(3, 1, 3)\nplt.plot(afghanistan_data['year'], afghanistan_data['population_millions'], marker='o', color='red')\nplt.title('Population Over Time in Afghanistan')\nplt.xlabel('Year')\nplt.ylabel('Population')\n\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\nIn Afghanistan, the life expectancy increases over time. The GDP per capita incrases in 1950-1960, decreases in 1960-1972, increases in 1972-1982, decreases in 1982-1997, and increases after 1992. The population generally increases over time, with an exception of the decrease in 1982."
   },
   {
-    "objectID": "life-gdp.html",
-    "href": "life-gdp.html",
-    "title": "life-gdp analysis",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Gapminder Analysis",
     "section": "",
-    "text": "This analysis explores the relationship between life expectancy and GDP per capita using the Gapminder dataset. The scatter plot below visualizes this relationship.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv('/Users/chenyunqing/Documents/QTM350/qtm350-quiz02/gapminder.csv')\n\nplt.figure(figsize=(10, 6))\nplt.scatter(df['gdp_per_capita'], df['life_expectancy'], alpha=0.7, edgecolor='k')\nplt.xlabel('GDP per Capita')\nplt.ylabel('Life Expectancy')\nplt.title('Life Expectancy vs. GDP per Capita')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nThere is a general trend that countries with higher GDP per capita tends to have larger life expectancy."
-  },
-  {
-    "objectID": "life-gdp.html#introduction",
-    "href": "life-gdp.html#introduction",
-    "title": "life-gdp analysis",
-    "section": "",
-    "text": "This analysis explores the relationship between life expectancy and GDP per capita using the Gapminder dataset. The scatter plot below visualizes this relationship.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv('/Users/chenyunqing/Documents/QTM350/qtm350-quiz02/gapminder.csv')\n\nplt.figure(figsize=(10, 6))\nplt.scatter(df['gdp_per_capita'], df['life_expectancy'], alpha=0.7, edgecolor='k')\nplt.xlabel('GDP per Capita')\nplt.ylabel('Life Expectancy')\nplt.title('Life Expectancy vs. GDP per Capita')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nThere is a general trend that countries with higher GDP per capita tends to have larger life expectancy."
+    "text": "The Gapminder dataset provides country-level life expectancy, population, and GDP per capita from various regions and years.\nYou can explore the Gapminder here: Gapminder Data Repository.\nLife Expectancy and GDP per Capita Life Expectancy and Population Afghanistan Analysis"
   },
   {
     "objectID": "life-population.html",
